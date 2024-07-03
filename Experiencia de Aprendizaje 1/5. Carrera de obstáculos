@@ -1,0 +1,48 @@
+Proceso carrera
+	Definir valor Como logico;
+	Definir enter, op1, op2, op3 Como Caracter;
+	Repetir
+	Escribir "¡Comienza la carrera!";	
+	Escribir "Aparece una valla, ¿saltas la valla?";
+	Leer op1 ;
+	si op1 = "si" Entonces
+		escribir "has saltado la valla";
+	FinSi
+		si op1 = "no" Entonces
+		escribir "EVITASTE LA VALLA, sigue corriendo..";
+	FinSi
+	
+	Escribir "**Aparece un túnel**";
+	Escribir "¿Pasarás dentro el túnel?";
+	Leer op2;
+	si op2 = "si" Entonces
+		escribir "Pasas por el túnel.";
+		Escribir "Bien hecho, ya queda poco.";
+	FinSi
+	Si op2 = "no" Entonces
+		escribir "Ánimo, solo rodea el túnel.";
+	FinSi
+	
+	Escribir "**Ves una laguna**";
+	Escribir "¿Dentras en la laguna?";
+	Leer op3;
+	si op3 = "si" Entonces
+		escribir "**Continuas la carrera nadando, pero quedas exausto**";
+		Escribir "Te devuelves al no poder cruzar y pierdes la carrera :(";
+		Escribir "";
+		Escribir "¿Comenzar nueva carrera?";
+		leer enter;
+	sino 
+		escribir "Rodeas la laguna y llegas a la meta con sufieciente energía.";
+		Escribir "¡¡FELICIDADES, GANASTE LA CARRERA!!";
+		Escribir "";
+		Escribir "¿Comenzar nueva carrera?";
+		leer enter;
+	FinSi
+	si enter = "no" Entonces
+		Escribir "La carrera ha finalizado.";
+	FinSi
+Hasta Que enter = "no"
+FinProceso
+
+
